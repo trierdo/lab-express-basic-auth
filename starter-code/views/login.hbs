@@ -1,0 +1,15 @@
+<h1>Hier einloggen.</h1>
+
+<form action="/login" method="POST">
+  <label>Username</label>
+  <input type="text" name="username" value="">
+  <label>Password</label>
+  <input type="password" name="hashWord"  value="">
+  <button type="submit">Mach hinne!</button>
+</form>
+
+<br><br>
+
+{{#if errorMessage}}
+<div class="error-message">{{errorMessage}}</div>
+{{/if}}
